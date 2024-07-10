@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discription" content="menu of the oberio cafe">
+    <link rel="icon" href="/img/menu.png" type="iamge/x-icon">
+    <title>menu</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+
+        th,
+        td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #e9e9e9;
+        }
+
+        .container {
+            display: flex;
+            justify-content: left;
+            /* Center align the tables */
+            gap: 10px;
+            /* Adjust the gap between the tables */
+            padding: 20px;
+        }
+
+        table {
+            width: 45%;
+            /* Adjust width of tables */
+            margin: 0;
+            /* Remove extra margins */
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body style="background: grey;;">
+    <header>
+        <h1>the oberio cafe </h1>
+        <!-- <img src="/img/menu2.jpg" alt="cafe menu photo" loading="lazy" height="300px" width="450px"> -->
+         <video src="/img/food.mp4" controls loop autoplay height="500px" width="500px"></video>
+        <hr>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="/site.html/index.html">home</a></li>
+                    <li><a href="/site.html/index.html#store hours2" target="_self">store hours</a></li>
+                    <li><a href="/site.html/contactus.html">contact us</a></li>
+                    <li><a href="/site.html/index.html#about us">about us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <form action="action.php">
+            <fieldset>
+                <legend>
+                    <h2> dietry preference</h2>
+                </legend>
+                <label for="option1">vegeitarian:</label>
+                <input type="radio" name="Cuisine opt" id="option1" value="veg">
+                <label for="option2">non-vegeterian:</label>
+                <input type="radio" name="Cuisine opt" id="option2" value="non-veg">
+                <label for="option3">mix diet:</label>
+                <input type="radio" name="Cuisine opt" id="option3" value="mix diet">
+                <br>
+                <br>
+                <button value="submit">submit</button>
+                <br>
+                <br>
+            </fieldset>
+            </header>
+            <main>
+                <section>
+            <fieldset>
+                <legend>
+                    <h3>menu</h3>
+                </legend>
+                <select name="momos" id="menu1" multiple style="margin: 10px; padding: 10px;">
+                    <optgroup label="momos">
+                        <option value="steam momos">steam momos</option>
+                        <option value="fry momos" selected>fry momos</option>
+                        <option value="paneer momos">paneer momos</option>
+                        <option value="chilli momos">chilli momos</option>
+                        <option value="tandoori momos">tandoori momos</option>
+                    </optgroup>
+                </select>
+                <select name="french fries" id="menu2" multiple style="margin: 10px; padding: 10px;">
+                    <optgroup label="french fries">
+                        <option value="simple french fries">simple french fries</option>
+                        <option value="perry perry fries">perry perry fries</option>
+                        <option value="cheezy fries">cheezy fries </option>
+                    </optgroup>
+                </select>
+                <select name="beverages" id="bev" multiple style="margin: 10px;padding: 10px;">
+                    <option value="water">water</option>
+                    <optgroup label="soft drink">
+                        <option value="coco-cola">coco-cola</option>
+                        <option value="dew">dew</option>
+                        <option value="pepsi">pepsi</option>
+                        <option value="mirinda">mirinda</option>
+                    </optgroup>
+                    <optgroup label="coffee">
+                        <option value="cold coffee">cold coffee</option>
+                        <option value="hot coffee">hot coffee</option>
+                        <option value="lattee">lattee</option>
+                </select>
+                <select name="baked goods" id="baked" multiple style="margin: 10px;padding: 10px;">
+                    <optgroup label="cheese cakes">
+                        <option value="blueberry">blueberry</option>
+                        <option value="red velvet">red velvet</option>
+                        <option value="oreo">oreo</option>
+                    </optgroup>
+                    <optgroup label="pastries">
+                        <option value="Croissant">Croissan</option>
+                        <option value="pain au chocolat">pain au chocolat</option>
+                        <option value="macarons">macarons</option>
+                    </optgroup>
+                </select>
+                <br><br>
+                <button type="submit">submit</button>
+            </fieldset>
+        </section>
+        <br>
+        <section>
+        </form>
+        <fieldset>
+            <legend><h2>menu card</h2></legend>
+      
+        <div class="container">
+            <div>
+                <table>
+                    <caption><b><u>Veg momos</u></b> </caption>
+                    <th>
+                        item
+                    </th>
+                    <th>
+                        price
+                    </th>
+                    <tr>
+                    </tr>
+                    <tr>
+                        <td>steam momos</td>
+                        <td>100 $</td>
+                    </tr>
+                    <tr>
+                        <td>fry momos</td>
+                        <td>120$</td>
+                    </tr>
+                    <tr>
+                        <td>chilli momos</td>
+                        <td>100$</td>
+                    </tr>
+                    <tr>
+                        <td>tandoori momos</td>
+                        <td>150$</td>
+                    </tr>
+                    <tr>
+                        <td>paneer momos</td>
+                        <td>130$</td>
+                    </tr>
+
+                </table>
+            </div>
+            <div>
+                <table>
+                    <caption><b><u>non-veg momos </u></b></caption>
+                    <th>
+                        item
+                    </th>
+                    <th>
+                        price
+                    </th>
+                    <tr>
+
+                    </tr>
+                    <tr>
+                        <td>steam momos</td>
+                        <td>120$</td>
+                    </tr>
+                    <tr>
+                        <td>fry momos</td>
+                        <td>160$</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            chilli momos
+                        </td>
+                        <td>120$</td>
+                    </tr>
+                    <tr>
+
+                        <td>tandoori momos</td>
+                        <td>190$</td>
+                    </tr>
+                    <tr>
+                        <td>paneer momos</td>
+                        <td>160$</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <table>
+                    <caption><b><u>French fries</u></b></caption>
+                    <th>item </th>
+                    <th> price</th>
+                    <tr>
+                        <td>simple fries</td>
+                        <td>30$</td>
+                    </tr>
+                    <tr>
+                        <td>peri fries</td>
+                        <td>35$</td>
+                    </tr>
+                    <tr>
+                        <td>cheezy fries</td>
+                        <td>45$</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <table>
+                    <caption><b><u>Beverages</u></b></caption>
+                    <th>item</th>
+                    <th>price</th>
+                    <tr>
+                        <td>water</td>
+                        <td>5$</td>
+                    </tr>
+                    <tr>
+                        <td>coco-cola</td>
+                        <td>10$</td>
+                    </tr>
+                    <tr>
+                        <td>pepsi</td>
+                        <td>10$</td>
+                    </tr>
+                    <tr>
+                        <td>miranda</td>
+                        <td>10$</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <table>
+                    <caption><b><u>coffee</u></b></caption>
+                    <th>item</th>
+                    <th>price</th>
+                    <tr>
+                        <td>hot coffee</td>
+                        <td>40$</td>
+                    </tr>
+                    <tr>
+                        <td>cold coffee</td>
+                        <td>45$</td>
+                    </tr>
+                    <tr>
+                        <td>lattee</td>
+                        <td>50$</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <table>
+                    <caption><b><u>pastries</u></b></caption>
+                    <th>
+                        item
+                    </th>
+                    <th>
+                        price
+                    </th>
+                    <tr>
+                        <td colspan="2" style="text-align: center; font-weight: bold;text-decoration: underline solid ;
+                        text-decoration-thickness: 2px ;">
+                            cheese cakes
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>blueberry</td>
+                        <td>25$</td>
+                    </tr>
+                    <tr>
+                        <td>red velvet</td>
+                        <td>30$</td>
+                    </tr>
+                    <tr>
+                        <td>oreo</td>
+                        <td>35$</td>
+                    </tr>
+                    <tr>
+                        <td>Croissant</td>
+                        <td>5$</td>
+                    </tr>
+                    <tr>
+                        <td>pain au chocolat</td>
+                        <td>5$</td>
+                    </tr>
+                    <tr>
+                        <td>macarons</td>
+                        <td>7$</td>
+                    </tr>
+                </table>
+            </div>
+            </div>
+        </fieldset>
+    </section>
+    </main>
+    <footer>
+        <fieldset>
+            <legend> <h2><u>order online or reserve a table</u></h2></legend>
+            <details>
+                <summary> <b><u>conatct us</u></b></summary>
+                <ul>
+                    <li><p>telephone:-<a href="tel:+11234567890">+11234567890</a></p></li>
+                    <li><p>mail:-<a href="mailto:randommail@gmail.com">randommail@gmail.com</a></p></li>
+                    <li><address>70772 Adolfo Motorway, Lake Rudy, <br> UT 22767-5700</address></li>
+                </ul>
+            </details>
+            <br>
+        </fieldset>
+        <a href="#">back to top</a>
+    </footer>
+</body>
+
+</html>
+
